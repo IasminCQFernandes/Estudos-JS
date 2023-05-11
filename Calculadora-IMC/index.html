@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <style>
+        body{
+            background-color: black;
+        }
+
+        .imc{
+            background-color: #ffae00;
+            display: block;
+            margin: auto;
+            width: 50%;
+            box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.418);
+        }
+        label{
+            display: block;
+            margin: auto;
+            text-align: center;
+            font-weight: bold;
+            padding: 2%;
+        }
+        input{
+            display: block;
+            margin: auto;
+            padding: 2%;
+            margin-bottom: 2%;
+        }
+        h1{
+            color: black;
+            text-align: center;
+            padding: 2%;
+            border-bottom:1px solid black ;
+        }
+
+        button{
+            display: block;
+            width: 30%;
+            height: 30px;
+            background-color: black;
+            color: #ffae00;
+            margin: auto;
+            border: none;
+            cursor: pointer;
+        }
+        
+        p{
+            background-color: black;
+           font-weight: bold;
+            height: 50px;
+            text-align: center;
+            color: #ffae00;
+            width: 70%;
+            margin: 4% auto ;
+            padding: 2%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="imc">
+        <h1>Calculadora IMC</h1> 
+        <label for="nome">Nome:</label>
+        <input type="text" id="name" placeholder="Qual o seu nome?">
+
+        <label for="altura">Altura:</label>
+        <input type="number" id="altura" placeholder="Qual a sua altura em metros?">
+
+        <label for="peso">Peso:</label>
+        <input type="number" id="peso" placeholder="Qual o seu peso em kg?">
+
+        <button id="calcular" onclick="calcular()" >Calcular</button>
+
+        <p id="resultado"> Resultado:</p>
+
+        <p id="analise">Analise do IMC: </p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

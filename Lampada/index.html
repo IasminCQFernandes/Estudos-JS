@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampada</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: black;
+        }
+        #lampada{
+            border: 1px solid lightgray;
+            width: 50%;
+            padding: 4%;
+            margin: auto;
+            background-color: lightgray;
+        }
+        #lampada img{
+           padding: 2%;
+           
+        }
+        #lampada button{
+            background-color: black;
+            color: rgb(255, 230, 0);
+            width: 30%;
+            height: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            border: none;
+
+        }
+        #lampada button:hover{
+            background-color: rgba(255, 153, 0, 0.767);
+            color: white;
+        }
+        p{
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="lampada">
+        <h1>Controle de Lampada</h1>
+        <img src="img/apagada.png" id="img"> <br>
+
+        <button onclick="acende()" id="acender-lamp">Acender</button>
+        <button onclick="apaga()" id="apagar-lamp">Apagar</button>
+
+        <p id="text"></p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
